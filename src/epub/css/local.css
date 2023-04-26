@@ -1,2 +1,94 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
+
+/* Begin poetry CSS */
+.epub-type-z3998-verse > p,
+.epub-type-z3998-poem > p,
+.epub-type-z3998-song > p,
+.epub-type-z3998-hymn > p{
+	text-align: left;
+	text-indent: 0;
+}
+
+.epub-type-z3998-verse > p > span,
+.epub-type-z3998-poem > p > span,
+.epub-type-z3998-song > p > span,
+.epub-type-z3998-hymn > p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+.epub-type-z3998-verse > p > span + br,
+.epub-type-z3998-poem > p > span + br,
+.epub-type-z3998-song > p > span + br,
+.epub-type-z3998-hymn > p > span + br{
+	display: none;
+}
+
+.epub-type-z3998-verse p + p,
+.epub-type-z3998-poem p + p,
+.epub-type-z3998-song p + p,
+.epub-type-z3998-hymn p + p{
+	margin-top: 1em;
+}
+
+p span.i1{
+	padding-left: 2em;
+	text-indent: -1em;
+}
+
+p span.i2{
+	padding-left: 3em;
+	text-indent: -1em;
+}
+
+article{
+	break-after: page;
+	page-break-after: always;
+	page-break-after: always;
+	page-break-after: always;
+}
+/* End poetry CSS */
+
+/* Begin bridgehead CSS */
+.epub-type-bridgehead{
+	display: inline-block;
+	font-size: 80%; /* Added */
+	font-style: italic;
+	max-width: 60%;
+	text-align: justify;
+	text-indent: 0;
+}
+
+.epub-type-z3998-verse .epub-type-bridgehead,
+.epub-type-z3998-poem .epub-type-bridgehead,
+.epub-type-z3998-song .epub-type-bridgehead,
+.epub-type-z3998-hymn .epub-type-bridgehead{
+	text-align: justify;
+}
+/* End bridgehead CSS */
+
+/* Begin bible specific CSS */
+/* Prevents all superscript from changing line height */
+sup{
+	font-size: 0.675em;
+	line-height: 1.2;
+	vertical-align: super;
+	vertical-align: 35%;
+}
+
+.chapter-number{
+	float: left;
+	font-size: 275%;
+	line-height: .9em;
+	margin-bottom: -0.3em;
+	margin-left: 0;
+	margin-right: 0.07em;
+	margin-top: 0;
+}
+
+section > .first-child > sup.verse-number{
+	display: none;
+}
+/* End bible specific CSS */
