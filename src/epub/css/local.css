@@ -1,6 +1,30 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
 
+/* Begin header CSS */
+header{
+	font-variant: small-caps;
+	margin-bottom: 3em;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 3em;
+}
+
+header > p{
+	text-align: center;
+}
+
+/* Bold all p-text categorized as titles */
+header > p.epub-type-z3998-title{
+	font-size: 150%;
+	font-weight: bold;
+}
+
+.epub-type-z3998-title{
+	font-weight: bold;
+}
+/* End header CSS */
+
 /* Begin poetry CSS */
 .epub-type-z3998-verse > p,
 .epub-type-z3998-poem > p,
@@ -49,6 +73,11 @@ article{
 	page-break-after: always;
 	page-break-after: always;
 }
+
+.selah{
+	font-style: italic;
+	text-align: right;
+}
 /* End poetry CSS */
 
 /* Begin bridgehead CSS */
@@ -78,7 +107,12 @@ sup{
 	vertical-align: 35%;
 }
 
+h5{
+	font-size: 1em;
+}
+
 .chapter-number{
+	display: none;
 	float: left;
 	font-size: 275%;
 	line-height: .9em;
@@ -86,9 +120,5 @@ sup{
 	margin-left: 0;
 	margin-right: 0.07em;
 	margin-top: 0;
-}
-
-section > .first-child > sup.verse-number{
-	display: none;
 }
 /* End bible specific CSS */
