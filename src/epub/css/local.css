@@ -122,3 +122,17 @@ h5{
 	margin-top: 0;
 }
 /* End bible specific CSS */
+
+/* Begin Reader's Edition */
+sup{
+	display: none;
+}
+
+section > h5{
+	display: none;
+}
+
+section + section{
+	margin-top: 1em;
+}
+/* End Reader's Edition' */
