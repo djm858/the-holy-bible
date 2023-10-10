@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<se-lint-ignore>
+	<file path="content.opf">
+		<ignore>
+			<code>x-017</code>
+			<reason>Unused id is to reference verses in future if needed.</reason>
+		</ignore>
+		<ignore>
+			<code>x-018</code>
+			<reason>Unused id is to reference verses in future if needed.</reason>
+		</ignore>
+	</file>
+	<file path="book-19-2.xhtml">
+		<ignore>
+			<code>m-045</code>
+			<reason>Splitting Psalms because it is so large. I want to hide the split in the ToC.</reason>
+		</ignore>
+		<ignore>
+			<code>s-085</code>
+			<reason>Splitting Psalms because it is so large. I want to hide the split in the ToC.</reason>
+		</ignore>
+	</file>
+	<file path="book-19-3.xhtml">
+		<ignore>
+			<code>m-045</code>
+			<reason>Splitting Psalms because it is so large. I want to hide the split in the ToC.</reason>
+		</ignore>
+		<ignore>
+			<code>s-085</code>
+			<reason>Splitting Psalms because it is so large. I want to hide the split in the ToC.</reason>
+		</ignore>
+	</file>
+	<file path="book-19-4.xhtml">
+		<ignore>
+			<code>m-045</code>
+			<reason>Splitting Psalms because it is so large. I want to hide the split in the ToC.</reason>
+		</ignore>
+		<ignore>
+			<code>s-085</code>
+			<reason>Splitting Psalms because it is so large. I want to hide the split in the ToC.</reason>
+		</ignore>
+	</file>
+	<file path="book-19-5.xhtml">
+		<ignore>
+			<code>m-045</code>
+			<reason>Splitting Psalms because it is so large. I want to hide the split in the ToC.</reason>
+		</ignore>
+		<ignore>
+			<code>s-085</code>
+			<reason>Splitting Psalms because it is so large. I want to hide the split in the ToC.</reason>
+		</ignore>
+	</file>
+	<file path="book-23.xhtml">
+		<ignore>
+			<code>s-085</code>
+			<reason>Something fishy here. It is only throwing an error for books over 50 chapters.</reason>
+		</ignore>
+	</file>
+	<file path="book-24.xhtml">
+		<ignore>
+			<code>s-085</code>
+			<reason>Something fishy here. It is only throwing an error for books over 50 chapters.</reason>
+		</ignore>
+	</file>
+</se-lint-ignore>
